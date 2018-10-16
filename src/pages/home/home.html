@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>YoPuedo</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <ion-list *ngFor="let course of courses" >
+   <button (click)="llamar(course.id)"><h2>{{ course.id}} {{ course.name}} </h2>
+    Id: {{course.id}} - Nombre: {{course.name}}
+   </button> 
+ </ion-list>
+
+ <!--  {{ course.name}} <button ion-button secondary menuToggle>Toggle Menu</button>-->
+</ion-content>

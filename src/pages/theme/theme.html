@@ -1,0 +1,32 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Temas</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+   
+  <ion-list *ngFor="let theme of themes"> 
+     <a href="http://{{ theme.dir}}/Id" target="_blank">{{ theme.name}}</a>
+  </ion-list>
+
+ <!--<ion-content padding="true" overflow-scroll="true">
+  <button ion-button (click)="playVideo()">Play Video</button> 
+  <button ion-button (click)="stopPlayingVideo()">Stop playing Video</button>
+
+ 
+  <video controls="controls" preload="metadata" autoplay="autoplay" webkit-playsinline="webkit-playsinline" class="videoPlayer">
+      <source src="https://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4" type="video/mp4"/>
+    </video>
+    
+  <div class="video-container">
+  <iframe ng-src="{{film.video | trustAsResourceUrl}}" frameborder="0" width="560" height="315">
+  </iframe>
+</div> 
+  
+   -->
+</ion-content>
